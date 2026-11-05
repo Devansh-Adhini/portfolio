@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#09090d" />
+    <meta
+      name="description"
+      content="Devansh Venkatesh Adhini — Computer Science at IIIT Vadodara. Exploring full stack development, blockchain, and artificial intelligence."
+    />
+    <title>Devansh Adhini — Code, curiosity & craft</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas id="gravity" aria-hidden="true"></canvas>
+    <div class="ambient-light" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="wordmark" href="#home" aria-label="Devansh Adhini, home"
+          ><span class="monogram">D</span></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#work">Work</a><a href="#journey">Journey</a
+          ><a href="#arsenal">Arsenal</a><a href="#contact">Contact</a>
+        </nav>
+        <a
+          class="header-resume"
+          href="./assets/devansh-resume.pdf"
+          target="_blank"
+          rel="noopener"
+          >Résumé <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden
+      >
+        <a href="#work">Selected work</a><a href="#journey">My journey</a
+        ><a href="#arsenal">The arsenal</a><a href="#contact">Get in touch</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="tiny-star" aria-hidden="true">✦</span> CODE. CURIOSITY.
+            CRAFT.
+          </p>
+          <h1 id="hero-title">
+            Devansh<span class="surname">VENKATESH ADHINI</span>
+          </h1>
+          <p class="hero-statement">
+            A curious mind.<br />A builder <em>at heart.</em>
+          </p>
+          <p class="hero-description">
+            Computer Science at IIIT Vadodara. Exploring the space between full
+            stack development, blockchain, and AI — one thoughtful build at a
+            time.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+              >Explore my work <span aria-hidden="true">↗</span></a
+            ><a
+              class="text-link"
+              href="./assets/devansh-resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >View résumé <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+        <div class="orbital" aria-hidden="true">
+          <div class="orbit-label orbit-label-top">
+            <span>01 / THE GRAVITY OF CURIOSITY</span><span>+</span>
+          </div>
+          <svg class="orbit-art" viewBox="0 0 520 520" fill="none">
+            <defs>
+              <radialGradient id="orb-glow">
+                <stop stop-color="#a985ff" stop-opacity=".12" />
+                <stop offset="1" stop-color="#a985ff" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient
+                id="orbit-stroke"
+                x1="140"
+                y1="60"
+                x2="380"
+                y2="460"
+              >
+                <stop stop-color="#d5c1ff" stop-opacity=".75" />
+                <stop offset=".4" stop-color="#9c73ed" stop-opacity=".08" />
+                <stop offset="1" stop-color="#a57df5" stop-opacity=".6" />
+              </linearGradient>
+            </defs>
+            <circle cx="260" cy="260" r="230" fill="url(#orb-glow)" />
+            <circle
+              cx="260"
+              cy="260"
+              r="198"
+              stroke="#a78bce"
+              stroke-opacity=".12"
+              stroke-dasharray="1 9"
+            />
+            <circle
+              cx="260"
+              cy="260"
+              r="160"
+              stroke="url(#orbit-stroke)"
+              stroke-width=".8"
+            />
+            <g transform="rotate(-38 260 260)">
+              <ellipse
+                cx="260"
+                cy="260"
+                rx="212"
+                ry="68"
+                stroke="url(#orbit-stroke)"
+                stroke-width=".8"
+              />
+              <g class="orbit-planet">
+                <circle r="10" fill="#b796f4" fill-opacity=".09" />
+                <circle r="4" fill="#decfff" />
+                <animateMotion
+                  dur="26s"
+                  repeatCount="indefinite"
+                  path="M 472 260 A 212 68 0 1 1 48 260 A 212 68 0 1 1 472 260"
+                />
+              </g>
+            </g>
+            <g transform="rotate(38 260 260)">
+              <ellipse
+                cx="260"
+                cy="260"
+                rx="212"
+                ry="68"
+                stroke="#a78bce"
+                stroke-opacity=".16"
+                stroke-width=".7"
+              />
+              <g class="orbit-planet">
+                <circle r="7" fill="#b796f4" fill-opacity=".08" />
+                <circle r="2.5" fill="#a684e4" />
+                <animateMotion
+                  dur="37s"
+                  repeatCount="indefinite"
+                  path="M 48 260 A 212 68 0 1 0 472 260 A 212 68 0 1 0 48 260"
+                />
+              </g>
+            </g>
+            <g>
+              <path
+                d="M260 241V279M241 260H279"
+                stroke="#cfb6ff"
+                stroke-opacity=".65"
+                stroke-width=".6"
+              />
+              <path
+                d="m260 252 8 8-8 8-8-8z"
+                fill="#c8aaff"
+                fill-opacity=".8"
+              />
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 260 260"
+                to="360 260 260"
+                dur="90s"
+                repeatCount="indefinite"
+              />
+            </g>
+            <path
+              d="M38 60V38H60M460 38H482V60M482 460V482H460M60 482H38V460"
+              stroke="#a78bce"
+              stroke-opacity=".22"
+              stroke-width=".7"
+            />
+          </svg>
+          <div class="orbit-label orbit-label-bottom">
+            <span>ALWAYS IN ORBIT.</span><span>∞</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <a class="scroll-cue" href="#work"
+            ><span class="scroll-line" aria-hidden="true"></span> SCROLL TO
+            DISCOVER</a
+          ><span class="location"
+            ><span class="status-light" aria-hidden="true"></span> BASED IN
+            INDIA <span class="location-time">/ IST</span></span
+          ><button
+            id="motion-toggle"
+            class="motion-toggle"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="pause-icon" aria-hidden="true">Ⅱ</span
+            ><span class="motion-label">Pause motion</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="chapter-strip">
+        <div class="wrap strip-inner">
+          <span>FULL STACK DEVELOPMENT</span><span aria-hidden="true">✦</span
+          ><span>BLOCKCHAIN SYSTEMS</span><span aria-hidden="true">✦</span
+          ><span>ARTIFICIAL INTELLIGENCE</span><span aria-hidden="true">✦</span
+          ><span>ENDLESS CURIOSITY</span>
+        </div>
+      </div>
+
+      <section id="work" class="section wrap" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="section-number">01</span> THE CAMPAIGNS
+            </p>
+            <h2 id="work-title">Ideas, made <em>real.</em></h2>
+          </div>
+          <a
+            class="small-link"
+            href="https://github.com/Devansh-Adhini"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Explore GitHub <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="projects">
+          <article class="project project-featured">
+            <div class="project-visual architecture-art" aria-hidden="true">
+              <span class="visual-caption">DISTRIBUTED BY DESIGN</span>
+              <div class="architecture-grid"></div>
+              <div class="network-line network-line-a"></div>
+              <div class="network-line network-line-b"></div>
+              <div class="network-line network-line-c"></div>
+              <div class="network-line network-line-d"></div>
+              <div class="network-node node-core">
+                <span>HAC</span><small>ACCESS LAYER</small>
+              </div>
+              <div class="network-node node-a">
+                <span>01</span><small>EDGE</small>
+              </div>
+              <div class="network-node node-b">
+                <span>02</span><small>EDGE</small>
+              </div>
+              <div class="network-node node-c">
+                <span>03</span><small>CHAIN</small>
+              </div>
+              <span class="visual-footer"
+                >EDGE NODES × SMART CONTRACTS <span>↗</span></span
+              >
+            </div>
+            <div class="project-copy">
+              <p class="project-index">
+                01 <span>BLOCKCHAIN · EDGE COMPUTING</span>
+              </p>
+              <h3>Trust, without<br />the bottleneck.</h3>
+              <p class="project-name">Hierarchical Access Control</p>
+              <p class="project-description">
+                Distributed authorization that brings edge computing and smart
+                contracts together. Built to explore low-latency validation
+                without a single point of failure.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Solidity</li>
+                <li>Hyperledger Besu</li>
+                <li>Docker</li>
+                <li>KubeEdge</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Devansh-Adhini/Blockchain-Edge-Computing-HAC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View source <span aria-hidden="true">↗</span></a
+                ><a
+                  href="https://drive.google.com/file/d/1sn0bsNg6nzbMG4r6kPyy0MT2KI6ld4YL/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Research paper <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <div class="project-pair">
+            <article class="project project-small">
+              <div class="mini-visual bank-art" aria-hidden="true">
+                <span class="visual-caption">VALUE, REIMAGINED</span>
+                <div class="token token-back">Ξ</div>
+                <div class="token token-front">Ξ</div>
+                <span class="mini-art-label">DECENTRALIZED / 002</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-index">02 <span>WEB3 · FINANCE</span></p>
+                <h3>A bank, on the chain.</h3>
+                <p class="project-name">Decentralized Blockchain Banking</p>
+                <p class="project-description">
+                  A Web3 banking system with staking, fixed deposits, and
+                  smart-contract interest accrual.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>React</li>
+                  <li>Solidity</li>
+                  <li>Ethers.js</li>
+                  <li>Ganache</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/VedaangNarkhede/Banking-System"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View source <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project project-small">
+              <div class="mini-visual block-art" aria-hidden="true">
+                <span class="visual-caption">SMALL BLOCKS. BIG IDEAS.</span>
+                <div class="code-block block-one">
+                  <span>when</span> curiosity starts
+                </div>
+                <div class="code-block block-two">
+                  <span>repeat</span> build · learn · explore
+                </div>
+                <div class="code-block block-three">
+                  <span>move</span> one step forward →
+                </div>
+                <span class="mini-art-label">VISUAL PROGRAMMING / 003</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-index">03 <span>EDTECH · AI</span></p>
+                <h3>Make logic click.</h3>
+                <p class="project-name">Why Did the Chicken Cross the Road?</p>
+                <p class="project-description">
+                  A Blockly-powered programming playground with loops,
+                  variables, and an AI assistant to guide the next step.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>React</li>
+                  <li>Blockly</li>
+                  <li>JavaScript</li>
+                  <li>Qwen LLM</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://wdccr.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live playground <span aria-hidden="true">↗</span></a
+                  ><a
+                    href="https://github.com/Devansh-Ubuntu/Visual-Programming-Language"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="journey"
+        class="section section-journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-number">02</span> THE QUEST LOG
+              </p>
+              <h2 id="journey-title">Always a <em>student.</em></h2>
+            </div>
+            <p class="section-aside">
+              A few chapters in an<br />ongoing education.
+            </p>
+          </div>
+          <div class="journey-layout">
+            <aside class="character-sheet">
+              <span class="character-symbol" aria-hidden="true">✧</span>
+              <h3>Beyond the code.</h3>
+              <p>
+                I’m Devansh, a final-year CSE student drawn to systems, useful
+                tools, and questions that don’t have an obvious answer.
+              </p>
+              <p>
+                Off-screen, you’ll find me playing chess or table tennis,
+                tweaking my Linux setup, or chasing an idea at a hackathon.
+              </p>
+              <div class="character-meta">
+                <div><span>HOME GUILD</span><strong>IIIT Vadodara</strong></div>
+                <div>
+                  <span>CURRENT CHAPTER</span
+                  ><strong>B.Tech CSE · 2023–2027</strong>
+                </div>
+                <div>
+                  <span>ACADEMIC CPI</span
+                  ><strong>8.60 <small>/ 10</small></strong>
+                </div>
+              </div>
+            </aside>
+            <div class="timeline">
+              <article class="timeline-entry">
+                <div class="timeline-date">
+                  <span>MAY — JUN 2026</span><span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <p class="entry-kind">RESEARCH</p>
+                  <h3>Big Data Analytics Intern</h3>
+                  <p class="entry-place">Goa Institute of Management</p>
+                  <p>
+                    Explored trust, security, and privacy in
+                    FinTech-as-a-Service. Synthesized literature and contributed
+                    to a research framework and manuscript.
+                  </p>
+                  <a
+                    class="small-link"
+                    href="https://drive.google.com/file/d/1x-MrCMNs0QO-gkUDcnUt_kg5gV25b4F5/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read the abstract <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+              <article class="timeline-entry">
+                <div class="timeline-date">
+                  <span>JAN — APR 2026</span><span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <p class="entry-kind">TEACHING</p>
+                  <h3>Teaching Assistant</h3>
+                  <p class="entry-place">
+                    Discrete Mathematics · IIIT Vadodara, ICD
+                  </p>
+                  <p>
+                    Led tutorials and doubt-solving for 140+ students. Built
+                    tools to automate grading, attendance, and plagiarism
+                    detection.
+                  </p>
+                  <a
+                    class="small-link"
+                    href="https://github.com/Devansh-Adhini/Auto-grading"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Explore the tools <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+              <article class="timeline-entry">
+                <div class="timeline-date">
+                  <span>AUG 2024 — FEB 2026</span
+                  ><span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-content">
+                  <p class="entry-kind">LEARNING</p>
+                  <h3>Major in Artificial Intelligence</h3>
+                  <p class="entry-place">IIT Ropar</p>
+                  <p>
+                    Another perspective on building: understanding the models,
+                    mathematics, and ideas behind intelligent systems.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="arsenal"
+        class="section wrap"
+        aria-labelledby="arsenal-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="section-number">03</span> TOOLS & RELICS
+            </p>
+            <h2 id="arsenal-title">The <em>arsenal.</em></h2>
+          </div>
+          <p class="section-aside">
+            Different tools.<br />The same builder’s instinct.
+          </p>
+        </div>
+        <div class="skill-table">
+          <div class="skill-row">
+            <span class="skill-number">I</span>
+            <h3>Languages</h3>
+            <p>
+              Python <span>/</span> C++ <span>/</span> JavaScript
+              <span>/</span> Java <span>/</span> SQL <span>/</span> Solidity
+              <span>/</span> C
+            </p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-number">II</span>
+            <h3>Web & intelligence</h3>
+            <p>
+              React <span>/</span> Node.js <span>/</span> PyTorch
+              <span>/</span> Pandas <span>/</span> NumPy
+              <span>/</span> Scikit-learn
+            </p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-number">III</span>
+            <h3>Systems & tooling</h3>
+            <p>
+              Docker <span>/</span> Git <span>/</span> Linux
+              <span>/</span> Supabase <span>/</span> Hyperledger Besu
+              <span>/</span> KubeEdge
+            </p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-number">IV</span>
+            <h3>The foundations</h3>
+            <p>
+              Data structures & algorithms <span>/</span> OS
+              <span>/</span> Databases <span>/</span> Networks
+              <span>/</span> Cryptography
+            </p>
+          </div>
+        </div>
+        <div class="achievements">
+          <div class="achievement">
+            <span class="achievement-icon" aria-hidden="true">✧</span>
+            <div>
+              <strong>USAII 2026 Finalist</strong>
+              <p>Selected from 808 teams</p>
+            </div>
+          </div>
+          <a
+            class="achievement"
+            href="https://leetcode.com/u/devansh_knows_better/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="achievement-value">1812</span>
+            <div>
+              <strong
+                >LeetCode rating <span aria-hidden="true">↗</span></strong
+              >
+              <p>From my November 2026 résumé</p>
+            </div></a
+          >
+          <div class="achievement">
+            <span class="achievement-value">1583</span>
+            <div>
+              <strong>CodeChef rating</strong>
+              <p>From my November 2026 résumé</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="wrap contact-inner">
+          <p class="eyebrow">
+            <span class="tiny-star" aria-hidden="true">✦</span> THE NEXT CHAPTER
+          </p>
+          <h2 id="contact-title">
+            Good things begin<br />with <em>a conversation.</em>
+          </h2>
+          <p>
+            A project, an opportunity, or a shared curiosity.<br />I’d love to
+            hear what you’re thinking.
+          </p>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="/api/contact"
+            method="POST"
+            aria-label="Send Devansh a message"
+          >
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="contact-website">Leave this field empty</label
+              ><input
+                id="contact-website"
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <div class="contact-fields">
+              <div class="form-field">
+                <label for="contact-name"
+                  >Your name <span aria-hidden="true">*</span></label
+                ><input
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  placeholder="What should I call you?"
+                  autocomplete="name"
+                  maxlength="100"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="contact-email"
+                  >Your email <span aria-hidden="true">*</span></label
+                ><input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-message"
+                >What’s on your mind? <span aria-hidden="true">*</span></label
+              ><textarea
+                id="contact-message"
+                name="message"
+                placeholder="An idea, an opportunity, or just a hello…"
+                rows="4"
+                minlength="10"
+                maxlength="5000"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-form-footer">
+              <p>Let’s see where a conversation takes us.</p>
+              <button
+                class="button button-primary contact-submit"
+                type="submit"
+              >
+                <span class="submit-label">Send message</span
+                ><span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <p
+              id="contact-status"
+              class="contact-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+            <noscript
+              ><p class="contact-noscript">
+                Please enable JavaScript to use this form, or use the email link
+                below.
+              </p></noscript
+            >
+          </form>
+          <a class="contact-email" href="mailto:devanshadhinilinkedin@gmail.com"
+            >Prefer email? <span>devanshadhinilinkedin@gmail.com ↗</span></a
+          >
+          <div class="contact-socials">
+            <a
+              href="https://github.com/Devansh-Adhini"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            ><a
+              href="https://linkedin.com/in/devansh-adhini"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn <span aria-hidden="true">↗</span></a
+            ><button id="copy-email" type="button">
+              Copy email <span aria-hidden="true">⧉</span>
+            </button>
+          </div>
+          <p
+            id="copy-status"
+            class="copy-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="footer-name" href="#home">DEVANSH<span>.</span></a>
+      <p>© <span id="year">2026</span> Devansh Venkatesh Adhini</p>
+      <a class="back-top" href="#home"
+        >Back to the surface <span aria-hidden="true">↑</span></a
+      >
+    </footer>
+  </body>
+</html>
